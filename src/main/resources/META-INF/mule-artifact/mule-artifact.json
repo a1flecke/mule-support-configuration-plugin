@@ -1,0 +1,26 @@
+{
+  "minMuleVersion": "4.2.2",
+  "requiredProduct": "MULE",
+  "extensionModelLoaderDescriptor": {
+    "id": "crafted",
+    "attributes": {
+      "type": "com.example.mule.configuration.SecureConfigurationPropertiesExtensionLoadingDelegate"
+    }
+  },
+  "name": "ramsey-secure-configuration-provider",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [
+        "com.example.mule.configuration"
+      ],
+      "exportedResources": [
+        "META-INF/services/com.example.mule.configuration.SecureConfigurationPropertiesProviderFactory"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
